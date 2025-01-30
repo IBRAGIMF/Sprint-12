@@ -1,15 +1,6 @@
 name: sprint-12
 on: push
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Install go
-        uses: actions/setup-go@v4
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Build
-        run: go build -v ./...
   test:
     needs: build
     runs-on: ubuntu-latest
