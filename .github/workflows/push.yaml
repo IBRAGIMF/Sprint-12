@@ -2,7 +2,6 @@ name: sprint-12
 on: push
 jobs:
   test:
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Install go
